@@ -9,7 +9,6 @@ export const Container = styled.div`
 
     th { 
       color: var(--text-body);
-      font-size: 400;
       padding: 1rem 2rem;
       text-align: left;
       line-height: 1rem;
@@ -35,5 +34,20 @@ export const Container = styled.div`
       }
     }
 
+  }
+
+  @media (max-width: 720px) {
+    table {
+      width: 50%;
+
+      th {
+        padding: 0.5rem 1rem;
+      }
+
+      td {
+        padding: 0.5rem 1rem;
+      }
+
+    }
   }
 `;
