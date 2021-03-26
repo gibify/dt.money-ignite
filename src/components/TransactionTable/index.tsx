@@ -20,15 +20,17 @@ export function TransactionTable() {
 					<tbody>
 						{transactions.map(transaction => (
 							<tr key={transaction.id}>
-								<td>{transaction.title}</td>
+								
+								<td><span>Título</span> {transaction.title}</td>
 								<td className={transaction.type}>
+								<span>Valor</span>
 									{ new Intl.NumberFormat('pt-BR', {
 										style: 'currency',
 										currency: 'BRL'
 									}).format(transaction.amount)}
 								</td>
-								<td>{transaction.category}</td>
-								<td>
+								<td><span>Categoria</span> {transaction.category}</td>
+								<td><span>Data</span>
 									{ new Intl.DateTimeFormat('pt-BR').format(
 										new Date(transaction.createdAt)
 									)}
