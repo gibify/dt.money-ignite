@@ -1,6 +1,6 @@
 <div align="center">
   
-  ## LAYOUT DESKTOP
+  ## LAYOUT
   
 <img src="https://github.com/gibifyofficial/dtmoney-ignite/blob/master/public/Capa-desktop.png" />
   <br>
