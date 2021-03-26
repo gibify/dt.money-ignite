@@ -45,6 +45,11 @@ export const Container = styled.form`
             filter: brightness(0.9);
         }
     }
+
+    @media (max-width: 620px) {
+        h2 {
+            font-size: 1rem; 
+        }
 `;
 
 export const TransactionTypeContainer = styled.div`

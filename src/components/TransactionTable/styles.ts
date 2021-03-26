@@ -21,9 +21,6 @@ export const Container = styled.div`
       color: var(--text-body);
       border-radius: 0.25rem;
 
-      &:first-child { 
-        color: var(--text-title);
-      }
 
       &.deposit {
         color: var(--green);
@@ -54,13 +51,13 @@ export const Container = styled.div`
        flex-direction: column;
        align-items: center;
        justify-content: space-between;
-
+       
        text-align: center;
 
        span {
          margin-bottom: 1rem;
          font-weight: 600;
-         color: var(--text-body);
+         color: var(--text-body); 
        }
       
      }

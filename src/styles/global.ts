@@ -85,4 +85,11 @@ export const GlobalStyle = createGlobalStyle`
         background: transparent;
 
     }
+
+    @media (max-width: 620px) {
+        .react-modal-content {
+            width: 80%;
+            max-width: 450px;
+        }
+    }
 `;
