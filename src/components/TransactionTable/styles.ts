@@ -80,7 +80,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 620px) {
-    span: {
+    span {
       display: none;
     }
   }
