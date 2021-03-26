@@ -43,13 +43,13 @@ export const Container = styled.div`
      }
 
      tr {
-       display: flex;
-       flex-wrap: wrap;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 0.25rem;
        margin-bottom: 1rem;
      }
 
      td {
-       width: 49%;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -57,22 +57,9 @@ export const Container = styled.div`
 
        text-align: center;
 
-       &:nth-child(1){
-         margin-bottom: 0.25rem;
-         margin-right: 1%;
-       }
-
-       &:nth-child(2){
-         margin-bottom: 0.25rem;
-       }
-
-       &:nth-child(3){
-         margin-right: 1%;
-       }
-
        span {
          margin-bottom: 1rem;
-         font-weight: 500;
+         font-weight: 600;
          color: var(--text-body);
        }
       
