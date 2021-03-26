@@ -27,21 +27,33 @@ export const Container = styled.div`
             display: block;
             margin-top: 1rem;
             font-size: 2rem;
-            font-weight: 500;
-        
+            font-weight: 500;     
         } 
+
+        .colorIncome {
+            color: var(--green);
+        }
+
+        .colorOutcome {
+            color: var(--red);
+        }
     }
 
-    @media (max-width: 720px) {  
-        grid-template-columns: 1fr;
+    @media (max-width: 780px) {  
+       gap: 1rem;
 
         div {
             padding: 0.75rem 1rem;
         }
+        
+    }
 
-        strong { 
-            text-align: center;
-        }
+    @media (max-width: 620px) {  
+       grid-template-columns: 1fr;
+       
+       width: 100%;
+       max-width: 400px;
+       margin: -8rem auto auto auto;
         
     }
 

@@ -1,13 +1,14 @@
-import { useContext } from 'react';
+import { useTransactions } from '../../hooks/useTransactions';
+
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import totalImg from '../../assets/total.svg';
-import { TransactionContext } from '../../TransactionContext';
+
 
 import { Container } from "./styles";
 
 export function Summary() {
-    const { transactions } = useContext(TransactionContext);
+    const { transactions } = useTransactions();
 
     const summary = transactions.reduce((acc, transaction) => {
         if(transaction.type === 'deposit') {
@@ -33,7 +34,7 @@ export function Summary() {
                     <p>Entradas</p>
                     <img src={incomeImg} alt="income icon"/>
                 </header>
-                <strong>
+                <strong className="colorIncome">
                     { new Intl.NumberFormat('pt-BR', {
                         style: 'currency',
                         currency: 'BRL'
@@ -46,12 +47,12 @@ export function Summary() {
                     <p>Saídas</p>
                     <img src={outcomeImg} alt="outcome icon"/>
                 </header>
-                <strong>
+                <strong className="colorOutcome">
                 { 
                     new Intl.NumberFormat('pt-BR', {
                         style: 'currency',
                         currency: 'BRL'
-                    }).format(- summary.withdraws)
+                    }).format(summary.withdraws)
                 }
                 </strong>
            </div>

@@ -38,15 +38,42 @@ export const Container = styled.div`
 
   @media (max-width: 720px) {
     table {
-      width: 50%;
 
-      th {
-        padding: 0.5rem 1rem;
+        thead {
+
+          tr {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            th {
+              padding: 1rem 1rem;
+              border-radius: 0.25rem;
+              border: 1px solid var(--shape);
+            }
+          }
       }
 
-      td {
-        padding: 0.5rem 1rem;
+      tbody {
+          tr {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            td {
+              padding: 1rem 1rem;
+              margin-bottom: 0.25rem;
+
+              & + td {
+                margin-left: 0.25rem;
+              }
+            }
       }
+
+    
+
+      
+
+      
 
     }
   }
