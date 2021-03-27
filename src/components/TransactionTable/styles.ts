@@ -24,10 +24,12 @@ export const Container = styled.div`
 
       &.deposit {
         color: var(--green);
+        font-weight: 500;
       }
 
       &.withdraw {
         color: var(--red);
+        font-weight: 500;
       }
     }
 

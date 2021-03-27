@@ -1,9 +1,9 @@
-import { useTransactions } from "../../hooks/useTransactions";
+// import { useTransactions } from "../../hooks/useTransactions";
 
 import { Container } from "./styles";
 
 export function TransactionTable() {
-	const { transactions } = useTransactions();
+	// const { transactions } = useTransactions();
 	
     return (
 			<Container>
@@ -18,7 +18,7 @@ export function TransactionTable() {
 					</thead>
 
 					<tbody>
-						{transactions.map(transaction => (
+						{/* {transactions.map(transaction => (
 							<tr key={transaction.id}>
 								
 								<td><span>Título</span> {transaction.title}</td>
@@ -36,7 +36,25 @@ export function TransactionTable() {
 									)}
 								</td>
 							</tr>
-						))}
+						))} */}
+
+			
+							<tr>
+								<td><span>Título</span> Compras</td>
+								<td className="withdraw">
+								<span>Valor</span> R$350,00</td>
+								<td><span>Categoria</span> Mercado</td>
+								<td><span>Data</span> 21/04/2021</td>
+							</tr>
+
+							<tr>
+								
+								<td><span>Título</span> Recebimento Salário</td>
+								<td className="deposit">
+								<span >Valor</span> R$3000,00</td>
+								<td><span>Categoria</span> Salário</td>
+								<td><span>Data</span> 05/04/2021</td>
+							</tr>
 					</tbody>
           
 				</table>
