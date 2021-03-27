@@ -58,6 +58,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 <h2>Cadastrar Informação</h2>
 
                 <input 
+                type="text" 
                 placeholder="Título"
                 value={title}
                 onChange={event => setTitle(event.target.value)}
