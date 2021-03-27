@@ -1,7 +1,7 @@
 ## Clone this project
 
 ```js
- git clone https://github.com/gibifyofficial/dtmonet-ignite.git
+ git clone https://github.com/gibifyofficial/dtmoney-ignite.git
 ```
 Install the Dependencies:
 
